@@ -1,0 +1,85 @@
+/* === THEME VARIABLES === */
+:root {
+  --bg: #f9f9f9;
+  --card: #ffffff;
+  --text: #111;
+  --subtext: #555;
+  --accent: #ff4d4d;
+  --shadow: rgba(0, 0, 0, 0.1);
+}
+
+/* === DARK MODE === */
+body.dark {
+  --bg: #121212;
+  --card: #1e1e1e;
+  --text: #f5f5f5;
+  --subtext: #bbbbbb;
+  --accent: #ff7070;
+}
+
+/* Body */
+body {
+  font-family: "Inter", Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Dark mode toggle */
+.toggle-theme {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: var(--accent);
+  border: none;
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.2s ease;
+}
+
+.toggle-theme:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+/* Center box */
+.center-box {
+  text-align: center;
+  background: var(--card);
+  padding: 50px 70px;
+  border-radius: 20px;
+  box-shadow: 0 6px 18px var(--shadow);
+}
+
+/* Logo */
+.logo {
+  font-size: 40px;
+  font-weight: 800;
+  color: var(--accent);
+  margin: 0 0 30px 0;
+}
+
+/* Enter button */
+.enter-btn {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 12px 24px;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.enter-btn:hover {
+  transform: scale(1.08);
+  opacity: 0.9;
+}

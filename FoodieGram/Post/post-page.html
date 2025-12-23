@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Post</title>
+    <link rel="stylesheet" href="post-page.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <a href="../Main/main-page.html" class="logo">foodiegram</a>
+      <h1 class="title">Create a Post</h1>
+      <div class="action-group">
+        <button class="drafts-btn">Drafts</button>
+        <button class="toggle-theme" id="themeToggle">🌙</button>
+      </div>
+    </header>
+
+    <main>
+      <div class="recipe-container">
+        <div class="recipe-layout">
+          <!-- LEFT SIDE -->
+          <!-- RECIPE INFO -->
+          <div class="recipe-info">
+            <!-- Recipe Title -->
+            <label for="title">Recipe Title</label>
+            <input type="text" id="title" placeholder="Enter recipe title" />
+
+            <!-- Description -->
+            <label for="description">Description</label>
+            <textarea
+              id="description"
+              placeholder="Write a brief description..."
+            ></textarea>
+
+            <!-- Estimated Time + Difficulty -->
+            <div class="flex-row">
+              <div class="flex-item">
+                <label for="time">Estimated Time (mins)</label>
+                <input type="number" id="time" placeholder="e.g. 30" />
+              </div>
+              <div class="flex-item">
+                <label for="difficulty">Difficulty Level</label>
+                <select id="difficulty">
+                  <option value="" disabled selected>Select Difficulty</option>
+                  <option value="easy">Easy</option>
+                  <option value="medium">Medium</option>
+                  <option value="hard">Hard</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Serving Size + Calories -->
+            <div class="flex-row">
+              <div class="flex-item">
+                <label for="servings">Serving Size</label>
+                <input type="number" id="servings" placeholder="e.g. 4" />
+              </div>
+              <div class="flex-item">
+                <label for="calories">Calories (optional)</label>
+                <input
+                  type="number"
+                  id="calories"
+                  placeholder="e.g. 450 kCal"
+                />
+              </div>
+            </div>
+
+            <!-- Ingredients -->
+            <label>Ingredients</label>
+            <div class="add-ingredient">
+              <input type="int" id="ingredientNum" placeholder="Amount" />
+              <input list="units" id="ingredientUnit" placeholder="Unit" />
+              <datalist id="units">
+                <option value="g">g</option>
+                <option value="ml">ml</option>
+                <option value="oz">oz</option>
+                <option value="lb">lb</option>
+                <option value="L">L</option>
+                <option value="cups">cups</option>
+                <option value="tsp">tsp</option>
+                <option value="tbsp">tbsp</option>
+              </datalist>
+
+              <input
+                type="text"
+                id="ingredientName"
+                placeholder="Ingredient name..."
+              />
+              <button id="addIngredientBtn">Add</button>
+            </div>
+            <ul id="ingredientsList" class="ingredients-list"></ul>
+          </div>
+
+          <!-- RIGHT SIDE -->
+          <div class="recipe-images">
+            <label>Upload Images</label>
+            <div class="image-uploader-wrapper">
+              <div id="imageDropbox" class="image-dropbox">
+                <p>Click or drag images here</p>
+                <input type="file" id="images" accept="image/*" multiple />
+              </div>
+
+              <div id="imageContainer" class="image-slideshow hidden">
+                <button id="prevImage" class="slide-btn left">❮</button>
+                <img id="displayImage" src="" />
+                <button id="nextImage" class="slide-btn right">❯</button>
+
+                <div class="image-slideshow-buttons">
+                  <button id="removeImageBtn" class="bottom-btn delete">
+                    <img src="../images/garbage.png" alt="delete" />
+                  </button>
+                  <button id="addImageBtn" class="bottom-btn add">＋</button>
+                </div>
+              </div>
+            </div>
+
+            <label>Tags</label>
+            <div class="tags-container">
+              <div class="tag halal" data-symbol="حلال">Halal</div>
+              <div class="tag spicy" data-symbol="🌶">Spicy</div>
+              <div class="tag vegan" data-symbol="🌱">Vegan</div>
+              <div class="tag gluten-free" data-symbol="GF">Gluten-Free</div>
+              <div class="tag nut-free" data-symbol="NF">Nut-Free</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Buttons -->
+        <div class="bottom-actions-container">
+          <div class="bottom-actions">
+            <button class="save-draft-btn">Save Draft</button>
+            <button class="post-dish-btn">Post Dish</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <footer>
+    <div class="footer-actions">
+      <a href="../Main/main-page.html"
+        ><button class="action-btn">🏠︎</button></a
+      >
+    </div>
+    <div class="footer-actions">
+      <button
+        id="bookmark-btn"
+        class="action-btn"
+        onclick="window.location.href='../Bookmark/bookmarks-page.html'"
+      >
+        <img src="../images/bookmark.png" alt="bookmark" />
+      </button>
+      <button
+        class="action-btn"
+        onclick="window.location.href='../Post/post-page.html'"
+      >
+        ＋
+      </button>
+    </div>
+  </footer>
+  <script src="post-page.js"></script>
+  <script>
+    src = "../Main/theme.js"
+  </script>
+</html>

@@ -1,0 +1,128 @@
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+}
+
+/* Center ONLY the form */
+.page-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 70px); /* subtract navbar height */
+}
+
+
+.login-container,
+.registrationBox{
+    background: #fff;
+    padding:40px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    width: 320px;
+    transition: all 0.3s ease;
+}
+
+.login-container:hover,
+.registrationBox:hover{
+    transform: translateY(-2px);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--card);
+  padding: 15px 30px;
+  box-shadow: 0 2px 6px var(--shadow);
+}
+
+.logo {
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-weight: 700;
+  font-size: 22px;
+  color: var(--accent);
+  color:#ff4d4d
+}
+
+h2{
+    text-align: center;
+    color: #111;
+    margin-bottom: 10px;
+}
+
+h4{
+    text-align:center;
+    color: #555;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+input[type = "text"],
+input[type = "password"]{
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 16px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: #fafafa;
+    transition: border 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #ff4d4d;
+  outline: none;
+  background-color: #fff;
+}
+
+button {
+  width: 100%;
+  background: linear-gradient(135deg, #ff4d4d, #ff6b6b);
+  color: #fff;
+  padding: 12px 0;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 10px rgba(255, 77, 77, 0.3);
+  letter-spacing: 0.3px;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #ff3838, #ff5757);
+  box-shadow: 0 6px 14px rgba(255, 77, 77, 0.45);
+  transform: translateY(-2px);
+}
+
+.signup{
+    text-align: center;
+    margin-top: 16px;
+    font-size: 14px;
+    color: #555;
+}
+
+.signup a {
+    color: #ff4d4d;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.signup a:hover{
+    text-decoration: underline;
+}
+
+a {
+  color: inherit;     /* use normal text color */
+  text-decoration: none;   /* remove underline */
+}
+a:hover {
+  text-decoration: underline; /* optional */
+}
