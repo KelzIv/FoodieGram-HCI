@@ -3,7 +3,7 @@ Foodiegram — HCI Website Prototype
 
 Foodiegram is a Human-Computer Interaction (HCI) website prototype designed to encourage food exploration through a social media–inspired interface. The project focuses on usability, navigation, and user engagement rather than backend functionality.
 
-The website allows users to browse various food posts, explore recipes, rate dishes, and interact with content in a familiar social-feed layout. While there is no working database, the prototype demonstrates key user flows such as authentication, content posting, and bookmarking.
+The website allows users to browse various food posts, explore recipes, rate dishes, and interact with content in a familiar social-feed layout. While there is no working database, the prototype demonstrates key user flows such as authentication, content posting, and bookmarking. We also included a search functionality on the home page for an improved user experience.
 
 Features
 Multi-page website built using HTML and hyperlinks
@@ -29,3 +29,4 @@ Note:
 This is a front-end prototype only
 No backend or database functionality is implemented
 Data is not persisted between session
+Start Flow from index page.
