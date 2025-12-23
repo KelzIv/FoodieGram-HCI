@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FoodieGram - Home</title>
+    <link rel="stylesheet" href="main-page.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <a href="main-page.html" class="logo">foodiegram</a>
+      <h1 class="title">Home</h1>
+      <div class="search-area">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search dishes..."
+          class="search-bar"
+        />
+        <button class="filter-btn" id="searchBtn">Search</button>
+        <button class="toggle-theme" id="themeToggle">🌙</button>
+      </div>
+    </nav>
+
+    <div class="feed-tabs">
+      <button class="tab-btn active">Explore</button>
+      <button class="tab-btn">Following</button>
+    </div>
+
+    <!-- MAIN FEED -->
+    <div class="post-container"></div>
+
+    <!-- FOOTER -->
+    <footer>
+      <span class="footer-text">© 2025 FoodieGram</span>
+      <div class="footer-actions">
+        <button
+          id="bookmark-btn"
+          class="action-btn"
+          onclick="window.location.href='../Bookmark/bookmarks-page.html'"
+        >
+          <img src="../images/bookmark.png" alt="bookmark" />
+        </button>
+        <button
+          class="action-btn"
+          onclick="window.location.href='../Post/post-page.html'"
+        >
+          ＋
+        </button>
+      </div>
+    </footer>
+
+    <script src="main-page.js"></script>
+  </body>
+</html>

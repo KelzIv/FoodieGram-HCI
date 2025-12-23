@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Spaghetti Bolognese — Foodiegram</title>
+    <link rel="stylesheet" href="recipestyle.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <header class="navbar">
+      <a href="../Main/main-page.html" class="logo">foodiegram</a>
+      <h2 class="recipe-header">Recipe</h2>
+      <div class="search-area">
+        <button class="toggle-theme" id="themeToggle">🌙</button>
+      </div>
+    </header>
+
+    <main class="recipe-page">
+      <!-- IMAGE -->
+      <section class="recipe-hero">
+        <div class="image-wrap">
+          <img src="../images/Spaghetti.png" alt="Spaghetti Bolognese" />
+          <div class="image-meta">
+            <div class="tags-container">
+              <div class="tag vegan active" data-symbol="🌱">Vegan</div>
+              <div class="tag halal active" data-symbol="حلال">Halal</div>
+            </div>
+            <div class="calories">350 kCal</div>
+          </div>
+        </div>
+
+        <!-- COMMENTS BELOW IMAGE -->
+        <div class="comments-section">
+          <h4>Comments</h4>
+          <div class="comment">
+            <strong>Alice</strong>
+            <p>Delicious! I added extra garlic and it was perfect.</p>
+          </div>
+          <div class="comment">
+            <strong>Bob</strong>
+            <p>Really loved the sauce, but I would reduce salt next time.</p>
+          </div>
+          <div class="comment">
+            <strong>Charlie</strong>
+            <p>My family enjoyed this so much! Will make again.</p>
+          </div>
+          <div class="comment">
+            <strong>Diana</strong>
+            <p>The spaghetti was cooked perfectly, very flavorful!</p>
+          </div>
+          <div class="comment">
+            <strong>Edward</strong>
+            <p>I added some mushrooms and it tasted amazing.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- DETAILS -->
+      <aside class="recipe-details">
+        <!-- USER -->
+        <div class="post-user">
+          <img src="../images/mario.jpg" alt="Mario" class="user-avatar" />
+          <span class="username">Mario</span>
+        </div>
+
+        <!-- TITLE -->
+        <h1 class="recipe-title">Spaghetti Bolognese</h1>
+
+        <!-- RATING -->
+        <div class="user-rating">
+          <span>★</span>
+          <span>★</span>
+          <span>★</span>
+          <span>★</span>
+          <span>☆</span>
+          <span class="rating-count">(1245)</span>
+        </div>
+
+        <!-- META -->
+        <div class="meta">
+          <span>25 min</span>
+          <span>•</span>
+          <span>Serves 2</span>
+          <span>•</span>
+          <span>Easy</span>
+        </div>
+
+        <!-- SAVE BUTTON -->
+        <div class="actions-row">
+          <button class="save-recipe-btn">Save</button>
+        </div>
+
+        <!-- DESCRIPTION -->
+        <div class="recipe-section">
+          <h4>Description</h4>
+          <p>
+            A classic Italian pasta dish with a rich and savory meat sauce,
+            perfect for a cozy family dinner.
+          </p>
+        </div>
+
+        <!-- INGREDIENTS -->
+        <div class="recipe-section">
+          <h4>Ingredients</h4>
+          <ul>
+            <li>200g spaghetti noodle</li>
+            <li>2 tbsp olive oil</li>
+            <li>3 cloves garlic, minced</li>
+            <li>1 medium onion, finely chopped</li>
+            <li>4 ripe tomatoes, diced</li>
+            <li>2 tbsp tomato paste</li>
+            <li>½ tsp red pepper flakes</li>
+            <li>Salt and black pepper to taste</li>
+            <li>Fresh basil leaves (for garnish)</li>
+            <li>Parmesan cheese (optional)</li>
+          </ul>
+        </div>
+
+        <!-- INSTRUCTIONS -->
+        <div class="recipe-section">
+          <h4>Instructions</h4>
+          <ol>
+            <li>
+              Boil spaghetti in salted water until al dente. Drain and set
+              aside.
+            </li>
+            <li>Heat olive oil, sauté garlic & onion until translucent.</li>
+            <li>Add tomatoes and tomato paste; simmer 8–10 min.</li>
+            <li>Season with salt, pepper, & red pepper flakes.</li>
+            <li>Toss pasta with sauce. Garnish with basil & parmesan.</li>
+          </ol>
+        </div>
+      </aside>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-text">© 2025 Foodiegram</div>
+      <div class="footer-actions">
+        <button
+          id="bookmark-btn"
+          class="action-btn"
+          onclick="window.location.href='../Bookmark/bookmarks-page.html'"
+        >
+          <img src="../images/bookmark.png" alt="bookmark" />
+        </button>
+        <button
+          class="action-btn"
+          onclick="window.location.href='../Post/post-page.html'"
+        >
+          ＋
+        </button>
+      </div>
+    </footer>
+    <script src="Recipe.js"></script>
+  </body>
+</html>
