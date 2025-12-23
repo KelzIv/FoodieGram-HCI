@@ -18,7 +18,7 @@ Technologies Used
 
 HTML
 CSS
-Basic JavaScript (if applicable)
+JavaScript
 
 
 Project Purpose
