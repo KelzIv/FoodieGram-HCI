@@ -21,7 +21,7 @@ This project is built using **HTML, CSS, and JavaScript** and runs entirely in t
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 * HTML5
 * CSS3 (custom theme variables)
@@ -31,7 +31,7 @@ This project is built using **HTML, CSS, and JavaScript** and runs entirely in t
 
 ---
 
-## 🚀 How to Run the Project
+## How to Run the Project
 
 ### Option 1: Run Locally
 
