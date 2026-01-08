@@ -1,32 +1,100 @@
-# FoodieGram-HCI
-Foodiegram — HCI Website Prototype
+## README.md for Foodiegram
+# Foodiegram
 
-Foodiegram is a Human-Computer Interaction (HCI) website prototype designed to encourage food exploration through a social media–inspired interface. The project focuses on usability, navigation, and user engagement rather than backend functionality.
+Foodiegram is a front-end recipe sharing web application that allows users to browse, view, and save recipes. Users can bookmark recipes, view detailed recipe pages, and switch between light and dark themes.
 
-The website allows users to browse various food posts, explore recipes, rate dishes, and interact with content in a familiar social-feed layout. While there is no working database, the prototype demonstrates key user flows such as authentication, content posting, and bookmarking. We also included a search functionality on the home page for an improved user experience.
+This project is built using **HTML, CSS, and JavaScript** and runs entirely in the browser using **LocalStorage** (no backend required).
 
-Features
-Multi-page website built using HTML and hyperlinks
-Social media–style layout to encourage discovery and interaction
-User authentication pages (Login & Sign Up)
-Food exploration and recipe viewing pages
-Bookmark feature (UI-only prototype)
-User posts and rating system (prototype functionality)
-Designed with a strong focus on usability and user experience
+---
 
-Technologies Used
+##  Features
 
-HTML
-CSS
-JavaScript
+* Landing page (index)
+* Login flow
+* Main feed with recipes
+* Search functionality
+* Individual recipe pages
+* Save / bookmark recipes
+* Bookmarks page (persistent via LocalStorage)
+* Light / Dark mode toggle
+* Responsive design
 
+---
 
-Project Purpose
-This project was created as part of an HCI assignment to explore interface design, navigation flow, and user-centered design principles. It serves as a front-end prototype to demonstrate how a food-based social platform could function.
+## 🛠️ Tech Stack
 
+* HTML5
+* CSS3 (custom theme variables)
+* JavaScript (Vanilla JS)
+* Browser LocalStorage
+* GitHub Pages (for deployment)
 
-Note:
-This is a front-end prototype only
-No backend or database functionality is implemented
-Data is not persisted between session
-Start Flow from index page.
+---
+
+## 🚀 How to Run the Project
+
+### Option 1: Run Locally
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/YOUR-USERNAME/Foodiegram.git
+   ```
+2. Open `index.html` in any modern browser
+3. Click **Foodiegram** to start the app
+
+> No server required — everything runs in the browser
+
+---
+
+### Option 2: Run on GitHub Pages (Recommended)
+
+1. Go to **Repository Settings**
+2. Scroll to **Pages**
+3. Under **Source**, select:
+
+   * Branch: `main`
+   * Folder: `/root`
+4. Save
+
+GitHub will give you a link like:
+
+```
+https://your-username.github.io/Foodiegram/
+```
+
+---
+
+## User Flow
+
+```
+index.html
+   ↓
+login page
+   ↓
+main feed
+   ↓
+recipe pages
+   ↓
+bookmarks
+and
+add recipe page
+```
+
+---
+
+## Notes
+
+* Recipe saves persist using browser LocalStorage
+* Dark mode preference is remembered across pages
+* No backend or authentication required (demo-based)
+* Can post to the main feed
+
+---
+
+# Author
+
+**Kelvin Enobie**
+Computer Science Student
+Front-End Web Project
+
